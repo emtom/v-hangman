@@ -95,7 +95,7 @@ export default {
     },
 
     handleLetter (letter) {
-      if (this.hiddenWord.indexOf(letter) !== -1) {
+      if (this.hiddenWord.indexOf(letter) !== -1 || this.missedLetters.indexOf(letter) !== -1) {
         return
       }
       if (this.word.indexOf(letter) === -1) {
